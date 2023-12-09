@@ -15,7 +15,11 @@
     --border-color: #ff9a0045;
     --text-decoration-color: #ff9a00;
   }
-  
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
   .container {
     margin: 0 auto;
     padding: 0 30px;
@@ -26,6 +30,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding: 0 30px 0 30px;
   }
   
   .fv {
@@ -45,6 +50,19 @@
   .resume__block {
     border-bottom: 3px solid var(--border-color);
     padding-bottom: 30px;
+    margin-bottom: 15px;
+  }
+  .resume__block__text {
+    border-bottom: 3px solid var(--border-color);
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+  }
+  .resume__block__skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 3px solid var(--border-color);
+    padding-bottom: 15px;
     margin-bottom: 15px;
   }
   
@@ -167,6 +185,10 @@
   }
   
   .skills__text {
+    list-style: none;
+    display: flex;
+    gap: 14px;
+    
     color: var(--secondary-text-color);
     text-align: justify;
   }
@@ -174,14 +196,23 @@
   /* Experience and additional info styles */
 
   .experiences {
-    flex: 1 1 60%;
-    margin-right: 50px;
+    flex: 1 1 80%;
+    /* margin-right: 50px; */
+  }
+  .experiences__company-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 14px;
   }
   
   .experiences__header {
     color: var(--secondary-text-color);
     text-align: left;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
   
   .experiences__company-header-durability {
@@ -200,8 +231,8 @@
   }
   
   .experiences__company-project {
-    margin-left: 15px;
-    margin-bottom: 25px;
+    /* margin-left: 15px;
+    margin-bottom: 25px; */
   }
   
   .experiences__company-project-role {
@@ -218,8 +249,10 @@
   }
   
   .experiences__company-project-responsibilities {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     color: var(--secondary-text-color);
-    padding-left: 20px;
   }
   
   .additional-info {
@@ -233,7 +266,7 @@
   .additional-info__education-header {
     color: var(--secondary-text-color);
     text-align: left;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
   
   .additional-info__education-university-durability {
@@ -252,6 +285,9 @@
   .additional-info__education-university-name {
     color: var(--secondary-text-color);
   }
+  .additional-info__education-university-place {
+    margin-bottom: 10px;
+  }
   
   .additional-info__languages {
     margin-bottom: 20px;
@@ -260,9 +296,13 @@
   .additional-info__languages-header {
     color: var(--secondary-text-color);
     text-align: left;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
-  
+  .additional-info__languages-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
   .additional-info__languages-item {
     color: var(--secondary-text-color);
   }
