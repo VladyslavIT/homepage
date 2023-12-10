@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: 'Raleway', Arial, Helvetica, sans-serif;
+  font-family: Raleway, Arial, Helvetica, sans-serif;
   line-height: 1.5;
 
   --primary-text-color: #181820;
@@ -30,7 +30,7 @@ ul {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  padding: 0 10px 0 10px;
+  padding: 0 10px;
 }
 
 .fv {
